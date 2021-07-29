@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <nav>
+            <div class="container nav-bar">
+                <div class="logo">
+                    <h1>Blog<span>Space</span></h1>
+                </div>
+                <div>
+                    <button id="open-modal" class="add-post">
+                      <span>&plus;<span>
+                      post
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+      <div id="id01" class="modal">
+          <span id="close-modal" class="close" title="Close Modal">&times;</span>
+          <form id="post-form" class="modal-content container" action="#">
+
+              <input type="text" name="title" id="post-title" placeholder="title">
+              <textarea name="body" id="post-body"  placeholder="type post here..."></textarea>
+              <button class="addbtn" id="pushPost">post</button>
+
+          </form>
+      </div>
+        <div id="blog-list" class="container container-wrap blog"></div>
+        <script src="index.js"></script>
+    </body>
+</html>
